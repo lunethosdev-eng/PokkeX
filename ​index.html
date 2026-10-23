@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokke — Tu música, sin límites ni anuncios</title>
+    <meta name="description" content="Escucha y descarga música gratis, sin anuncios, importa tus playlists de Spotify y personaliza tu perfil.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons para iconografía limpia tipo Apple -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Navegación Glassmorphism estilo Apple -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <span class="logo-icon">🎵</span>
+                <span class="brand-name">Pokke</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#features">Características</a>
+                <a href="#web-app">Versión Web / iOS</a>
+                <a href="#changelog">Novedades</a>
+                <a href="#releases">Historial</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="#download" class="btn-nav-download">Descargar APK</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="badge-status">
+                    <span class="pulse-dot"></span> 100% Gratis &amp; Sin Anuncios
+                </div>
+                <h1 class="hero-title">Siente la música.<br><span class="gradient-text">Sin interrupciones.</span></h1>
+                <p class="hero-subtitle">
+                    Pokke es la app de música definitiva: descarga tus canciones preferidas, importa tus playlists de Spotify al instante y personaliza tu perfil como quieras.
+                </p>
+
+                <!-- Botones de Acción -->
+                <div class="hero-actions" id="download">
+                    <a id="btn-main-download" href="#" class="btn-primary">
+                        <i data-lucide="download"></i>
+                        <div class="btn-text">
+                            <span class="btn-label">Descargar APK (Android)</span>
+                            <span class="btn-subtext" id="latest-version-tag">Cargando última versión...</span>
+                        </div>
+                    </a>
+                    <a href="#web-app" class="btn-secondary">
+                        <i data-lucide="smartphone"></i>
+                        <span>Usar en Web / iPhone</span>
+                    </a>
+                </div>
+
+                <!-- Métricas del Release en vivo -->
+                <div class="release-metrics glass-card">
+                    <div class="metric-item">
+                        <i data-lucide="package-check"></i>
+                        <div>
+                            <strong id="metric-version">--</strong>
+                            <span>Última versión</span>
+                        </div>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <i data-lucide="arrow-down-to-line"></i>
+                        <div>
+                            <strong id="metric-downloads">--</strong>
+                            <span>Descargas totales</span>
+                        </div>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <i data-lucide="shield-check"></i>
+                        <div>
+                            <strong>Seguro</strong>
+                            <span>Verificado por GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preview / Visual Mockup con Glassmorphism -->
+            <div class="hero-visual">
+                <div class="device-mockup glass-card">
+                    <div class="mockup-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="player-card glass-card">
+                            <div class="album-art">🎵</div>
+                            <div class="track-info">
+                                <h3>Tu canción favorita</h3>
+                                <p>Importada desde Spotify</p>
+                            </div>
+                            <div class="player-controls">
+                                <i data-lucide="skip-back"></i>
+                                <i data-lucide="play" class="play-btn"></i>
+                                <i data-lucide="skip-forward"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plataforma Web & iPhone Notice -->
+        <section id="web-app" class="section-padding">
+            <div class="container">
+                <div class="banner-ios glass-card">
+                    <div class="banner-icon">
+                        <i data-lucide="apple"></i>
+                    </div>
+                    <div class="banner-text">
+                        <h2>¿Usas iPhone o prefieres no instalar nada?</h2>
+                        <p>Pokke está optimizada como Web App (PWA) para que puedas escuchar música directamente desde Safari o tu navegador preferido en iOS y PC.</p>
+                    </div>
+                    <a href="#" class="btn-ios-app" id="btn-web-app-link">
+                        Abrir Web App <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características Principales -->
+        <section id="features" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Diseñada para verdaderos amantes de la música</h2>
+                    <p>Todo lo que necesitas en una sola aplicación, sin tarifas ni cobros ocultos.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i data-lucide="shield-off"></i></div>
+                        <h3>Cero Anuncios</h3>
+                        <p>Sin interrupciones comerciales ni banners molestos mientras disfrutas de tus álbumes favoritos.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i data-lucide="download-cloud"></i></div>
+                        <h3>Descarga Offline</h3>
+                        <p>Guarda tus canciones directamente en tu dispositivo y escúchalas sin gastar tus datos móviles.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i data-lucide="repeat-2"></i></div>
+                        <h3>Importador de Spotify</h3>
+                        <p>Transfiere tus listas de reproducción de Spotify a Pokke en cuestión de segundos y sin complicación.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i data-lucide="sparkles"></i></div>
+                        <h3>Personaliza tu Perfil</h3>
+                        <p>Expresa tu estilo decorando tu perfil público, eligiendo temas visuales y mostrando tus gustos.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i data-lucide="dollar-sign"></i></div>
+                        <h3>100% Gratuito</h3>
+                        <p>Sin suscripciones VIP ni funciones bloqueadas detrás de muros de pago.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i data-lucide="zap"></i></div>
+                        <h3>Rápido y Ligero</h3>
+                        <p>Consumo mínimo de batería y recursos, optimizado para cualquier dispositivo Android.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Novedades de la última versión -->
+        <section id="changelog" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Novedades de la última versión</h2>
+                    <p>Notas de actualización extraídas automáticamente desde GitHub Releases.</p>
+                </div>
+                <div class="glass-card changelog-box" id="changelog-container">
+                    <div class="loading-spinner">Obteniendo cambios recientes...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historial de Versiones (Viejas y Betas) -->
+        <section id="releases" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Historial de Versiones y Betas</h2>
+                    <p>Explora versiones anteriores o prueba las últimas compilaciones beta.</p>
+                </div>
+                <div class="releases-list" id="releases-list-container">
+                    <div class="loading-spinner">Cargando lista de versiones...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instrucciones de instalación APK -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="glass-card install-guide">
+                    <h2>¿Cómo instalar el APK en Android?</h2>
+                    <ol class="steps-list">
+                        <li><span>1</span> Haz clic en el botón <strong>Descargar APK</strong>.</li>
+                        <li><span>2</span> Si tu navegador solicita confirmación, selecciona <strong>"Descargar de todos modos"</strong>.</li>
+                        <li><span>3</span> Una vez descargado, abre el archivo `.apk` e instala. Si Android te lo pide, activa la opción de <i>"Instalar aplicaciones de fuentes desconocidas"</i> en la configuración de tu navegador.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <section id="faq" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+                <div class="faq-accordion">
+                    <details class="glass-card">
+                        <summary>¿Pokke es completamente gratis?</summary>
+                        <p>Sí, Pokke es y seguirá siendo un proyecto gratuito sin cobros recurrentes ni publicidad.</p>
+                    </details>
+                    <details class="glass-card">
+                        <summary>¿Cómo importo mis listas de Spotify?</summary>
+                        <p>Dentro de la app ve a la sección de Colección &gt; Importar &gt; Copia el enlace de tu lista de reproducción pública de Spotify y Pokke se encargará del resto.</p>
+                    </details>
+                    <details class="glass-card">
+                        <summary>¿Estará disponible en Google Play Store o App Store?</summary>
+                        <p>Por ahora Pokke se distribuye directamente como archivo `.apk` para Android y como aplicación Web/PWA para iPhone y navegadores de escritorio.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; Pokke — Desarrollado por <strong>lunethosdev-eng</strong></p>
+            <div class="footer-links">
+                <a id="github-repo-link" href="#" target="_blank" rel="noopener">
+                    <i data-lucide="github"></i> Repositorio GitHub
+                </a>
+                <a id="report-issue-link" href="#" target="_blank" rel="noopener">
+                    <i data-lucide="bug"></i> Reportar un problema
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
